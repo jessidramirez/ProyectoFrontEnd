@@ -30,27 +30,27 @@
 <div id="contenido">
 <img src="imagen/login.jpeg" alt="sesion">
 	<div>
-	<form action="login" method="post"></form>
+	<form action="LOGIN.html" method="post" id="registro">
 		<table>
 			<caption>Usuario Nuevo</caption>
 			<tr>
-				<td><label for="contacto">Usuario</label></td>
-				<td><input type="text"></td>
+				<td><label for="user">Usuario</label></td>
+				<td><input type="text" name="user" id="user" required></td>
 			</tr>
 			<tr>
-				<td><label for="contacto">Telefono</label></td>
-				<td><input type="email" name="" id=""></td>
+				<td><label for="telefono">Telefono</label></td>
+				<td><input type="text" name="telefono" id="telefono" required></td>
 			</tr>
 			<tr>
-				<td><label for="contacto">Correo</label></td>
-				<td><input type="email" name="" id=""></td>
+				<td><label for="correo">Correo</label></td>
+				<td><input type="email" name="correo" id="correo" required></td>
 			</tr>
 			<tr>
-				<td><label for="contacto">Contraseña</label></td>
-				<td><input type="email" name="" id=""></td>
+				<td><label for="pass">Contraseña</label></td>
+				<td><input type="password" name="pass" id="pass" required	></td>
 			</tr>
 			<tr>
-				<th colspan="2"><input type="button" value="INGRESAR"></th>
+				<th colspan="2"><button type="submit">Registrarse</button></th>
 			</tr>
 			<tr>
 				<th colspan="2"><a href="LOGIN.html" rel="noopener noreferrer">Cancelar</a></th>
@@ -70,6 +70,6 @@
 </ol>
 <p>Desarrollado por Jesssid - 2024</p>
 </footer>
-
+<script type="text/javascript" src="code.js" ></script>
 </body>
 </html>

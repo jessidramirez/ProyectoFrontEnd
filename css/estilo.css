@@ -6,7 +6,7 @@
 		#contenido{border-top:2px solid black;min-height:700px;width:850px; margin:5px; color: black;margin:auto; margin-top: 10px;}
 		#contenido>*{width: 400px; height: 500px; display: inline-block;padding: 10px;text-align: justify; vertical-align: middle;}
 		a{text-decoration: none;top: 5px; color: rgb(86, 2, 163);}
-		#logo{z-index: 100; left:50px; top: 50px; position: relative;background-color: white; background-image:url(/imagen/logo.png);background-size:cover;width:200px;height:200px; border-radius:50%; border:2px solid rgb(128,0,128);}
+		#logo{z-index: 100; left:50px; top: 50px; position: relative;background-color: white; background-image:url(../imagen/logo.png);background-size:cover;width:200px;height:200px; border-radius:50%; border:2px solid rgb(128,0,128);}
 		#menu{position: sticky;margin:0;height: 200px;padding:0;top: 50px;z-index: 1;transform: translate(-50px, 0);}
 		ol{margin:0;padding:0;}
 		#log>ul{position: sticky;margin:0;height: 200px;padding:0;left:200px;top: 50px;}
