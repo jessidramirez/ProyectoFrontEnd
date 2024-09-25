@@ -29,26 +29,31 @@
 </header>
 <div id="contenido">
 <div id="sevicio">
-    <h1 class="servicios">Servicio de Instalación</h1>
-    <div class="descripcion">
+    <a class="servicios" href="CONTRATOS.html">Ver Contratos</a>
+    <a class="servicios" href="#"  id="crear">Crear Contratos</a>
+    <h1 class="servicios" id="instalaciones">Servicio de Instalación</h1>
+    <div class="descripcion" id="info-instalaciones">
         <p>Ofrecemos servicios profesionales de instalación para diversos equipos y dispositivos:</p>
         <ul>
-            <li>Instalación de televisores, computadoras y otros dispositivos electrónicos.</li>
-            <li>Asesoramiento sobre la ubicación adecuada y la disposición de cables.</li>
-            <li>Resolución de problemas con equipos existentes.</li>
-            <li>Entrega de instrucciones de uso a los clientes.</li>
+            <li>Configuración y puesta en marcha de electrodomésticos como lavadoras, secadoras, refrigeradores, cocinas, hornos, microondas, etc.</li>
+            <li>Montaje y configuración de aires acondicionados, calefacción central, calentadores de agua, etc.</li>
+            <li>Instalación de redes de datos, Wi-Fi y cableado estructurado.</li>
+            <li>Montaje de lámparas, apliques, interruptores y enchufes.</li>
         </ul>
     </div>
-    <h1 class="servicios">Servicio de Reparación</h1>
-    <div class="descripcion">
+    <h1 class="servicios" id="reparaciones">Servicio de Reparación</h1>
+    <div class="descripcion" id="info-reparaciones">
         <p>Nuestro equipo de expertos se dedica a la reparación de diversos dispositivos:</p>
         <ul>
-            <li>Reparación de computadoras, laptops y otros equipos electrónicos.</li>
-            <li>Cumplimiento de garantías y obligaciones legales.</li>
-            <li>Suministro de piezas de repuesto.</li>
-            <li>Asistencia técnica para solucionar fallos.</li>
+            <li>Diagnóstico y solución de problemas en electrodomésticos averiados.</li>
+            <li>Sustitución de piezas defectuosas.</li>
+            <li>Mantenimiento preventivo para prolongar la vida útil de los aparatos.</li>
+            <li>Reparación de tuberías y desagües.</li>
+            <li>Reemplazo de interruptores, fusibles y componentes eléctricos.</li>
+            <li>Diagnóstico y resolución de fallas en sistemas de calefacción o aire acondicionado.</li>
         </ul>
     </div>
+    
 </div>
 </div>
 
@@ -62,6 +67,23 @@
 </ol>
 <p>Desarrollado por Jesssid - 2024</p>
 </footer>
+<script>
+    //Se capturan las etiquetas de instalaciones y reparaciones para cambiar el estilo si le da click para mostrar y ocultar los elementos
+    const inst = document.getElementById("instalaciones");
+    const infoinst = document.getElementById("info-instalaciones");
+    const rep = document.getElementById("reparaciones");
+    const inforep = document.getElementById("info-reparaciones");
 
+    //Al seleccionar el titulo de reparaciones muestra la informacion de reparaciones y oculta la de instalaciones
+    rep.addEventListener("click", function (event) {
+        inforep.style.display = 'block';
+        infoinst.style.display = 'none';
+    });
+    //Al seleccionar el titulo instalaciones  muestra la informacion de instalaciones y oculta la de reparaciones
+    inst.addEventListener("click", function (event) {
+        infoinst.style.display = 'block';
+        inforep.style.display = 'none';
+    });
+</script>
 </body>
 </html>
